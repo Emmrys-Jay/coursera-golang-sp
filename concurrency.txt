@@ -1,0 +1,38 @@
+Von Neumann Bottleneck
+
+Memory is always slower that a CPU, meaning that ni matter how the clock rate of the CPU is cranked up, it still has to wait on memeory while executing. Therefore, the speed only increases by little.
+Smaller transistors switch faster compared to bigger ones.
+
+
+
+Power Wall
+
+The number of transistors couldn't continue to increase because they consumed a lot of power, which impacts temperature. Air cooling is the standard for cooling processors.
+
+Supercomputers undergo liquid cooling, they have pipes which takes a heat absorbing liquid.
+
+P = a * CF(V)^2
+
+P = dynamic power of the processor
+a = percent of time switching
+C = capacitance (reduces as the size of transistor reduces)
+F = clock frequency
+V = voltage swing (low to high)
+
+
+
+Denard Scaling
+
+Goes with Moore's Law by describing that the voltage swing shoulc scale with transistor size, that means both should reduce at the same time. But denard scale could not go too far because we need a voltage swing that is up to the threshold voltage.
+
+
+
+Leakage power
+
+Leakage power got more as insulators got thinner since the size of transistors also got thinner.
+
+
+
+Hiding latency
+
+Concurrency improves performance even without parallelism, tasks usually periodically wait for something (e.g wait for memory). Hiding latency involves doing other tasks when a running task is waiting on a process. 
